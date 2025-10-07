@@ -19,4 +19,12 @@ export class AppController {
   hello() {
     return 'con /sas/';
   }
+
+  @Get('tacks')
+  tasks() {
+    return this.appService.getTasks();
+  }
+
+
+
 }
